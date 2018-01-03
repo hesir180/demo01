@@ -30,6 +30,5 @@ public class UserController {
 		User userInformationById = userService.getUserInformationById(1);
 		System.out.println(userInformationById);
 		System.out.println(userService.getClass().getName());
-		userService.aa();
 	}
 }

@@ -93,6 +93,11 @@
 	</update>
 	-->
 	<select id="getUserInformationById" parameterType="int" resultType="com.czwj.domain.User">
-		select * from user
+		select * from user where userId=#{id}
 	</select>
+	
+	<select id="GetUserRelatedEntity" parameterType="int" resultType="com.czwj.domain.role_entity">
+		select entityId,entityName from role_entity where roleId=(select roleId from role_user where userId=#{id})
+	</select>
+
 </mapper>

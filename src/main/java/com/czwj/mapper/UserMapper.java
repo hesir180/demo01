@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Repository;
 
 import com.czwj.domain.User;
+import com.czwj.domain.role_entity;
 @Repository
 public interface UserMapper {
 
@@ -18,5 +19,7 @@ public interface UserMapper {
 	
 
 	User getUserInformationById(int id);
+
+	List<role_entity> GetUserRelatedEntity(int id);
 
 }

@@ -3,6 +3,7 @@ package com.czwj.service;
 import java.util.List;
 
 import com.czwj.domain.User;
+import com.czwj.domain.role_entity;
 
 public interface UserService {
 	List<User> findAll();
@@ -17,5 +18,5 @@ public interface UserService {
 	
 	User getUserInformationById(int id);
 
-	public void aa();
+	List<role_entity> GetUserRelatedEntity(int id);
 }

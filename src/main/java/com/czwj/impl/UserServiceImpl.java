@@ -5,10 +5,11 @@ import java.util.List;
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
+
 import com.czwj.domain.User;
+import com.czwj.domain.role_entity;
 import com.czwj.mapper.UserMapper;
 import com.czwj.service.UserService;
-import com.google.gson.Gson;
 
 @Service
 public class UserServiceImpl implements UserService{
@@ -46,8 +47,11 @@ public class UserServiceImpl implements UserService{
 		// TODO Auto-generated method stub
 		return userMapper.getUserInformationById(id);
 	}
-	
-	public void aa(){
-		System.out.println("aaaa");
+
+	public List<role_entity> GetUserRelatedEntity(int id) {
+		// TODO Auto-generated method stub
+		return userMapper.GetUserRelatedEntity(id);
 	}
+
+
 }

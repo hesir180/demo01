@@ -119,11 +119,11 @@ public class User {
 	
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", userCode=" + userCode + ", password=" + password + ", userName=" + userName
-				+ ", userSex=" + userSex + ", userBirthday=" + userBirthday + ", userDepId=" + userDepId
-				+ ", userDepartment=" + userDepartment + ", userAddress=" + userAddress + ", userPhone=" + userPhone
-				+ ", userQQ=" + userQQ + ", userEmail=" + userEmail + ", userState=" + userState + ", userRemark="
-				+ userRemark + ", createTime=" + createTime + ", onlineState=" + onlineState + "]";
+		return "{id:" + id + ", userCode:" + userCode + ", password:" + password + ", userName:" + userName
+				+ ", userSex:" + userSex + ", userBirthday:" + userBirthday + ", userDepId:" + userDepId
+				+ ", userDepartment:" + userDepartment + ", userAddress:" + userAddress + ", userPhone:" + userPhone
+				+ ", userQQ:" + userQQ + ", userEmail:" + userEmail + ", userState:" + userState + ", userRemark:"
+				+ userRemark + ", createTime:" + createTime + ", onlineState:" + onlineState + "}";
 	}
 	
 }
